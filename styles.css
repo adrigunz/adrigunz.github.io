@@ -12,10 +12,15 @@ p {}
 
 span {}
 
-footer {}
-
-.title {
-    background-image: url("https://images.pexels.com/photos/301614/pexels-photo-301614.jpeg?cs=srgb&dl=ancient-architecture-asia-301614.jpg&fm=jpg");
+footer {
+    text-align: center;
 }
 
-.content {}
+.title {
+    background: #D0E4F5 url("https://images.pexels.com/photos/796306/pexels-photo-796306.jpeg?cs=srgb&dl=clouds-cold-daylight-796306.jpg&fm=jpg") no-repeat fixed 0px 0px;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+}
