@@ -1,26 +1,67 @@
-body {}
-
-h1 {}
-
-h2 {}
-
-h3 {}
-
-h4 {}
-
-p {}
-
-span {}
-
-footer {
-    text-align: center;
-}
-
-.title {
-    background: #D0E4F5 url("https://images.pexels.com/photos/796306/pexels-photo-796306.jpeg?cs=srgb&dl=clouds-cold-daylight-796306.jpg&fm=jpg") no-repeat fixed 0px 0px;
-    text-align: center;
-}
-
-.content {
-    text-align: center;
-}
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+    }
+    
+    h1 {}
+    
+    h2 {}
+    
+    h3 {}
+    
+    h4 {}
+    
+    p {}
+    
+    span {}
+    
+    footer {
+        background: #D0E4F5 url("https://images.pexels.com/photos/2127789/pexels-photo-2127789.jpeg?cs=srgb&dl=adventure-air-aircraft-2127789.jpg&fm=jpg") no-repeat scroll 0% 50%;
+        text-align: center;
+    }
+    
+    .title {
+        background: #D0E4F5 url("https://images.pexels.com/photos/796306/pexels-photo-796306.jpeg?cs=srgb&dl=clouds-cold-daylight-796306.jpg&fm=jpg") no-repeat fixed 0px 0px;
+        text-align: center;
+    }
+    
+    .content {
+        background: #D0E4F5 url("https://images.pexels.com/photos/2166695/pexels-photo-2166695.jpeg?cs=srgb&dl=backlit-fog-foggy-2166695.jpg&fm=jpg") no-repeat scroll 0% 0%;
+        text-align: center;
+    }
+    
+    .block {
+        position: relative;
+        background: linear-gradient(0deg, #000, #272727);
+    }
+    
+    .block:before,
+    .block:after {
+        content: '';
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+        background-size: 400%;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        z-index: -1;
+        animation: steam 20s linear infinite;
+    }
+    
+    @keyframes steam {
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 400% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
+    
+    .block:after {
+        filter: blur(50px);
+    }
