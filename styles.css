@@ -1,7 +1,7 @@
     body {
         margin: 0;
         padding: 0;
-        background-color: #000;
+        background-color: lightskyblue;
     }
     
     h1 {}
@@ -33,7 +33,7 @@
     
     .block {
         position: relative;
-        background: linear-gradient(0deg, #000, #272727);
+        background: linear-gradient(0deg, lightblue, lightskyblue);
     }
     
     .block:before,
